@@ -16,7 +16,6 @@ function loadContent() {
     xhr.onloadend = function () {
         if (this.responseText !== "") {
             var data = JSON.parse(this.responseText);
-            // console.log(data);
             var listDepaterment = data.data;
 
             for (i = 0; i < listDepaterment.length; i++) {
@@ -27,7 +26,6 @@ function loadContent() {
                 kolom3.innerHTML =
                     `<input type="button" class="btn btn-danger" onclick='deleteByID(${listDepaterment[i].departmentID})' value="hapus">` +
                     `<input type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#form2" value="perbarui" onclick='updateByID(${listDepaterment[i].departmentID})'> `;
-                    // `<input type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#form2" value="perbarui"' onclick = "updateByID()> `;
                 kolom1.innerHTML = listDepaterment[i].departmentID;
                 kolom2.innerHTML = listDepaterment[i].departmentName;
 
@@ -64,7 +62,6 @@ function loadContent2() {
     xhr.onloadend = function () {
         if (this.responseText !== "") {
             var data = JSON.parse(this.responseText);
-            // console.log(data);
             var listDepaterment = data.data;
 
             for (i = 0; i < listDepaterment.length; i++) {
@@ -75,7 +72,6 @@ function loadContent2() {
                 kolom3.innerHTML =
                     `<input type="button" class="btn btn-danger" onclick='deleteByID(${listDepaterment[i].departmentID})' value="hapus">` +
                     `<input type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#form2" value="perbarui" onclick='updateByID(${listDepaterment[i].departmentID})'> `;
-                    // `<input type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#form2" value="perbarui"' onclick = "updateByID()> `;
                 kolom1.innerHTML = listDepaterment[i].departmentID;
                 kolom2.innerHTML = listDepaterment[i].departmentName;
 

@@ -59,7 +59,6 @@ function updateByID2(){
     xhr.open("PUT", url, true);
     xhr.setRequestHeader("Content-type", "application/json;charset=UTF-8");
     xhr.onload = function () {
-        // console.log(this.responseText.status);
     }
     xhr.onerror = function () {
         alert('Error simpan data.')
@@ -67,8 +66,6 @@ function updateByID2(){
     xhr.onloadend = function () {
         console.log(this.responseText)
         var response = JSON.parse(this.responseText);
-
-        // perlu ngebenerin backend biar seragam responnya seragam
 
         if (response.data !== null) {
             alert("Sukses memperbarui data.");
