@@ -40,6 +40,8 @@ function loadContent() {
     };
     xhr.open("GET", url, true);
     xhr.send();
+
+    
 }
 
 function loadContent2() {
