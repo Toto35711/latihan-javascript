@@ -1,4 +1,4 @@
 # latihan-javascript
-Aplikasi hasil latihan menggunakan backend Spring Boot.
+Aplikasi hasil latihan
 
-Ini hanya untuk latihan.
+Di proyek ini, saya menggunakan HTML, CSS, dan JavaScript untuk membuat tampilan website. Untuk backend, saya menggunakan framework Java Spring Boot.
