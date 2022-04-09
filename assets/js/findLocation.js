@@ -10,9 +10,12 @@ function loadLocationID() {
             for(i=0;i<data.length;i++){
                 listLocationID.push(data[i].locationId+" "+data[i].city);
                 var optionString= document.createElement("option");
+                var optionString2= document.createElement("option");
                 optionString.value=data[i].locationId;
                 optionString.innerText=data[i].locationId+" "+data[i].city;
-                document.getElementById("locationID").append(optionString);
+                optionString2.value=data[i].locationId;
+                optionString2.innerText=data[i].locationId+" "+data[i].city;
+                document.getElementById("locationID").append(optionString2);
                 document.getElementById("locationID2").append(optionString);
             }
         }
@@ -25,3 +28,4 @@ function loadLocationID() {
 }
 
 loadLocationID();
+// document.getElementById("locationID").append();
