@@ -1,6 +1,6 @@
 /** 
  * This is a function to delete a record using departmentID
- * @param {i} departmentID this the ID of a department record that we want to delete
+ * @param departmentID this the ID of a department record that we want to delete
 */
 function deleteByID(i) {
   Swal.fire({

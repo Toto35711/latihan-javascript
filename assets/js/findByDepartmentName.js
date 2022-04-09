@@ -1,3 +1,6 @@
+/** 
+ * This is a function to show searching results
+*/
 function loadContent2() {
 
     clearResult();
