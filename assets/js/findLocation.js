@@ -1,7 +1,7 @@
 /** 
- * This is a function to get all locationID and city from location entity 
- * to be displayed in the dropdown field of add and update form,so that the users
- * won't input any value that is not exists in the location table.
+ * This is a function to get all locationID and city from location table
+ * to be displayed in the dropdown field of add and update form, so that the users
+ * won't input any value that does not exist in the location table.
 */
 function loadLocationID() {
     var xhr = new XMLHttpRequest;

@@ -1,7 +1,7 @@
 /** 
- * This is a function to get all employeeID and fullname from employee entity 
+ * This is a function to get all employeeID and fullname (first nama + last name) from employee table
  * to be displayed in the dropdown field of add and update form, so that the users
- * won't input any value that is not exists in the employee table.
+ * won't input any value that does not exist in the employee table.
 */
 function loadManager() {
     var xhr = new XMLHttpRequest;

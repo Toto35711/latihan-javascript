@@ -1,5 +1,5 @@
 /** 
- * This is a function to get all current values of a record
+ * This is a function to fill the update form
  * @param id department ID
  * @param nama department name
  * @param lokasi location ID
@@ -11,6 +11,8 @@ function updateByID(id,nama,lokasi,manajer) {
     document.getElementById("departmentName2").value = nama;
     lokasi=lokasi==null?"":lokasi;
     manajer=manajer==null?"":manajer;
+    document.getElementById("locationID2").value = lokasi;
+    document.getElementById("managerID2").value = manajer;
 }
 
 /**
