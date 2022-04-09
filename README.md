@@ -1,5 +1,5 @@
 # Department Data Management App
-This is a simple web app created using HTML, CSS (with Bootstrap framework), and (vanilla) Javascript. 
+This is a simple website page created using HTML, CSS (with Bootstrap framework), and (vanilla) Javascript to manage my department table. 
 
 ## Features
 - [x] Add new record to the database 
