@@ -29,7 +29,7 @@ function loadContent2() {
                 var kolom3 = document.createElement("td");
                 kolom3.innerHTML =
                     `<input type="button" class="btn btn-danger" onclick='deleteByID(${listDepaterment[i].departmentID})' value="Delete">` +
-                    `<input type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#form2" value="Update" onclick='updateByID(${listDepaterment[i].departmentID})'> `;
+                    `<input type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#form2" value="Update" onclick='updateByID(${listDepaterment[i].departmentID},"${listDepaterment[i].departmentName}",${listDepaterment[i].locationID},${listDepaterment[i].managerID})'> `;
                 kolom1.innerHTML = listDepaterment[i].departmentID;
                 kolom2.innerHTML = listDepaterment[i].departmentName;
 

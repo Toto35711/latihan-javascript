@@ -1,3 +1,7 @@
+/** 
+ * This is a function to delete a record using departmentID
+ * @param {i} departmentID this the ID of a department record that we want to delete
+*/
 function deleteByID(i) {
   Swal.fire({
     title: 'Are you sure?',
@@ -19,6 +23,10 @@ function deleteByID(i) {
   })
 }
 
+/** 
+ * This is a function that send the delete request
+ * @param {i} departmentID this the ID of a department record that we want to delete
+*/
 function deleteByIDInner(i) {
   var xhr = new XMLHttpRequest();
   var url = "http://localhost:8090/department/response/" + i;

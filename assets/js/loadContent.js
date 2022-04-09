@@ -1,3 +1,6 @@
+/** 
+ * This is a function to show all records
+*/
 function loadContent() {
 
     clearResult();

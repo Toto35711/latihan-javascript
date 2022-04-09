@@ -1,3 +1,8 @@
+/** 
+ * This is a function to get all employeeID and fullname from employee entity 
+ * to be displayed in the dropdown field of add and update form, so that the users
+ * won't input any value that is not exists in the employee table.
+*/
 function loadManager() {
     var xhr = new XMLHttpRequest;
     var url = "http://localhost:8090/employee/2findAll";
@@ -19,8 +24,6 @@ function loadManager() {
             }
         }
     };
-
-
 
     xhr.open("GET", url, true);
     xhr.send();

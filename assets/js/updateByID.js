@@ -1,3 +1,10 @@
+/** 
+ * This is a function to get all current values of a record
+ * @param id department ID
+ * @param nama department name
+ * @param lokasi location ID
+ * @param nama manager's name
+*/
 function updateByID(id,nama,lokasi,manajer) {
     console.log(id,nama,lokasi,manajer);
     document.getElementById("departmentID2").value = id;
@@ -6,6 +13,9 @@ function updateByID(id,nama,lokasi,manajer) {
     manajer=manajer==null?"":manajer;
 }
 
+/**
+ * This is a function to get all values from an update form, stringify them and send them via PUT request
+ */
 function updateByID2() {
 
     var xhr = new XMLHttpRequest();

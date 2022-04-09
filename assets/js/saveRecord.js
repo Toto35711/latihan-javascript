@@ -1,3 +1,6 @@
+/** 
+ * This is a function to save a new record
+*/
 function sendData() {
     var xhr = new XMLHttpRequest();
     var url = "http://localhost:8090/department/response/";
