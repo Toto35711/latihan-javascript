@@ -14,23 +14,45 @@ function sendData() {
 
     }
     xhr.onerror = function () {
-        alert('Error simpan data.');
+        xhr.onerror = function () {
+            Swal.fire({
+                icon: 'error',
+                title: 'Sorry',
+                text: 'There is something wrong with the service!',
+              });
+        }
+        var myModalEl = document.getElementById('form1');
+        var modal = bootstrap.Modal.getInstance(myModalEl);
+        modal.hide();
     }
     xhr.onloadend = function () {
         console.log(this.responseText)
         var response = JSON.parse(this.responseText);
-        
+
         if (response.data !== null) {
             document.getElementById("departmentName").value = '',
-            document.getElementById("managerID").value = '',
-            document.getElementById("locationID").value = ''
-            alert("Sukses simpan data.");
+                document.getElementById("managerID").value = '',
+                document.getElementById("locationID").value = ''
+            Swal.fire(
+                "Success",
+                "The department record has been successfully added!",
+                'success'
+            );
+            var myModalEl = document.getElementById('form1');
+            var modal = bootstrap.Modal.getInstance(myModalEl);
+            modal.hide();
             loadContent();
         } else {
-            alert('Error simpan data.');
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Something went wrong! Could not add a new record.',
+            });
         }
+
 
     }
     xhr.send(data);
-    return false; 
+
+    return false;
 }
